@@ -8,4 +8,10 @@ app.get("/", (request, response) => {
 	})
 });
 
+app.post('/', (request, response) => {
+	return response.json({
+		message: 'POST sucessful'
+	})
+});
+
 app.listen(3333, () => console.log("connected"));
